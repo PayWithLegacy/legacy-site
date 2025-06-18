@@ -1,6 +1,8 @@
 const slackUrls = {
-  successUrl: "",
-  errorUrl: "",
+  successUrl:
+    "https://hooks.slack.com/services/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",
+  errorUrl:
+    "https://hooks.slack.com/services/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",
 } as const;
 
 export async function postSlackMessage(

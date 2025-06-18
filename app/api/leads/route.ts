@@ -26,7 +26,10 @@ async function postToDealTracker(leadBody: LeadBody): Promise<any> {
     `https://contacts.dealtracker.us/dtapi/lead/create`,
     {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        apiKey: DEAL_TRACKER_API_KEY,
+      },
       body: JSON.stringify({
         apiKey: DEAL_TRACKER_API_KEY,
         business_corporate_name: leadBody.legal_name,
