@@ -4,17 +4,27 @@ import { DEAL_TRACKER_API_KEY } from "@/utils/env";
 import { postSlackMessage } from "@/utils/slack";
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
+  const body: LeadBody = await request.json();
   try {
-    const body: LeadBody = await request.json();
-    await postToDealTracker(body);
+    const response = await postToDealTracker(body);
+    if (response?.Response === "Api Authorization Failed.") {
+      throw new Error("API authorization to DealTracker failed");
+    }
     await postSlackMessage(
-      `New lead posted to Deal Tracker: ${JSON.stringify(body)}`,
+      `New lead posted to Deal Tracker:\n` +
+        `*Lead Details*:\n` +
+        Object.entries(body)
+          .map(([key, value]) => `${key}: ${value}`)
+          .join("\n"),
       "successUrl"
     );
     return NextResponse.json("Success!", { status: 200 });
   } catch (error: any) {
     await postSlackMessage(
-      `Error posting lead to Deal Tracker: ${error.message}`,
+      `*Error posting lead to Deal Tracker*: ${error.message}\n` +
+        Object.entries(body)
+          .map(([key, value]) => `*${key}*: ${value}`)
+          .join("\n"),
       "errorUrl"
     );
     return NextResponse.json("Failure!", { status: 500 });
@@ -46,7 +56,5 @@ async function postToDealTracker(leadBody: LeadBody): Promise<any> {
     const errorMessage = await response.text();
     throw new Error(`Failed to post to Deal Tracker: ${errorMessage}`);
   }
-  const responseBody = await response.json();
-  console.log(responseBody); //TODO: delete this line after we find the response
   return response.json();
 }
