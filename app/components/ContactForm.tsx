@@ -118,7 +118,7 @@ export default function ContactForm() {
               value={legalName}
               onChange={(e) => setLegalName(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
               placeholder="Your Company Inc."
             />
           </div>
@@ -135,7 +135,7 @@ export default function ContactForm() {
               id="dbaName"
               value={dbaName}
               onChange={(e) => setDbaName(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
               placeholder="Doing Business As Name"
             />
           </div>
@@ -154,7 +154,7 @@ export default function ContactForm() {
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
                 placeholder="John"
               />
             </div>
@@ -172,7 +172,7 @@ export default function ContactForm() {
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
                 placeholder="Doe"
               />
             </div>
@@ -191,7 +191,7 @@ export default function ContactForm() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
               placeholder="you@company.com"
             />
           </div>
@@ -209,7 +209,7 @@ export default function ContactForm() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
               placeholder="(555) 123-4567"
             />
           </div>
@@ -217,7 +217,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+            className="w-full bg-gradient-to-r from-[#172D55] to-[#172D55] text-white py-3 px-6 rounded-lg font-semibold hover:from-[#172D55]/90 hover:to-[#172D55]/90 focus:outline-none focus:ring-2 focus:ring-[#172D55] focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
           >
             {isSubmitting ? "Submitting..." : "Get Started Free"}
           </button>

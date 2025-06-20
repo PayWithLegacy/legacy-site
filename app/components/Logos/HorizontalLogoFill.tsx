@@ -1,4 +1,4 @@
-export default function HorizontalLogo({
+export default function HorizontalLogoFill({
   fillColor = "black",
 }: {
   fillColor: string;

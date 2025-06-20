@@ -1,20 +1,16 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      "brand-blue": "#172D55",
+      "brand-red": "#172D55",
+      "brand-gold": "#D2B253",
+    },
     extend: {
-      colors: {
-        // Brand Colors
-        primary: {
-          "brand-red": "#C72027",
-          "brand-blue": "#172D55",
-          "brand-gold": "#D2B253",
-        },
-      },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
         mono: ["var(--font-geist-mono)", "monospace"],
@@ -36,13 +32,13 @@ module.exports = {
       },
       boxShadow: {
         brand:
-          "0 10px 25px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -2px rgba(37, 99, 235, 0.05)",
-        "brand-lg": "0 25px 50px -12px rgba(37, 99, 235, 0.25)",
+          "0 10px 25px -3px rgba(23, 45, 85, 0.1), 0 4px 6px -2px rgba(23, 45, 85, 0.05)",
+        "brand-lg": "0 25px 50px -12px rgba(23, 45, 85, 0.25)",
       },
       backgroundImage: {
-        "gradient-brand": "linear-gradient(135deg, #2563eb 0%, #4f46e5 100%)",
+        "gradient-brand": "linear-gradient(135deg, #172D55 0%, #172D55 100%)",
         "gradient-brand-light":
-          "linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)",
+          "linear-gradient(135deg, #172D55 0%, #D2B253 100%)",
       },
     },
   },

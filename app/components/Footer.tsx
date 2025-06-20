@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HorizontalLogo from "./Logos/HorizontalLogo";
+import HorizontalLogo from "./Logos/HorizontalLogoFill";
 
 export default function Footer() {
   return (
@@ -14,23 +14,34 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Legacy Payments is a modern payment processing platform that enables businesses to securely accept payments, manage transactions, and streamline their financial operations.
+              Legacy Payments is a modern payment processing platform that
+              enables businesses to securely accept payments, manage
+              transactions, and streamline their financial operations.
             </p>
             <div className="flex space-x-4">
               {/* Social Media Icons - Placeholder */}
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <span className="sr-only">Facebook</span>
                 <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
                   <span className="text-xs">f</span>
                 </div>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <span className="sr-only">Twitter</span>
                 <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
                   <span className="text-xs">t</span>
                 </div>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <span className="sr-only">LinkedIn</span>
                 <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
                   <span className="text-xs">in</span>
@@ -46,22 +57,34 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/about"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -75,22 +98,34 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/help" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/help"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Help Center
                 </Link>
               </li>
               <li>
-                <Link href="/documentation" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/documentation"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Documentation
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/privacy"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-300 hover:text-white transition-colors">
+                <Link
+                  href="/terms"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Terms of Service
                 </Link>
               </li>
@@ -105,13 +140,22 @@ export default function Footer() {
               © 2025 Legacy Payments. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0 flex space-x-6">
-              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link
+                href="/privacy"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
                 Privacy
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link
+                href="/terms"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
                 Terms
               </Link>
-              <Link href="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link
+                href="/cookies"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+              >
                 Cookies
               </Link>
             </div>
