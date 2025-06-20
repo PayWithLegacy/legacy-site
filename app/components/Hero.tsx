@@ -52,16 +52,7 @@ export default function Hero() {
   return (
     <div className="relative bg-gradient-to-br from-brand-blue via-brand-blue/95 to-brand-blue/85 overflow-hidden">
       {/* Animated background elements */}
-      <motion.div
-        className="absolute inset-0 opacity-10"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.1 }}
-        transition={{ duration: 2, delay: 0.5 }}
-      >
-        <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-white rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-white rounded-full blur-2xl" />
-      </motion.div>
+      
 
       <motion.div
         className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32"
