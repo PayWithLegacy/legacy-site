@@ -82,7 +82,7 @@ export default function Contact() {
                   </h3>
                   <p className="text-gray-600">Send us a message anytime</p>
                   <p className="text-brand-red font-medium">
-                    info@legacypayments.com
+                    support@paywithlegacy.com
                   </p>
                 </div>
               </div>
