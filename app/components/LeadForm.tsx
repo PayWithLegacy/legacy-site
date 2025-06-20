@@ -2,18 +2,22 @@
 
 import { useState } from "react";
 
-type ContactBody = {
-  name: string;
-  phone: string;
+type LeadBody = {
+  legal_name: string;
+  dba_name: string;
+  first_name: string;
+  last_name: string;
   email: string;
-  comment: string;
+  phone: string;
 };
 
 export default function ContactForm() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [legalName, setLegalName] = useState("");
+  const [dbaName, setDbaName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
+  const [phone, setPhone] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -24,31 +28,35 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      const contactData: ContactBody = {
-        name: name,
-        phone: phone,
+      const leadData: LeadBody = {
+        legal_name: legalName,
+        dba_name: dbaName,
+        first_name: firstName,
+        last_name: lastName,
         email: email,
-        comment: comment,
+        phone: phone,
       };
 
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/leads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(contactData),
+        body: JSON.stringify(leadData),
       });
 
       if (!response.ok) {
-        throw new Error("Failed to submit contact form");
+        throw new Error("Failed to submit lead");
       }
 
       setIsSubmitted(true);
       // Reset form
-      setName("");
-      setPhone("");
+      setLegalName("");
+      setDbaName("");
+      setFirstName("");
+      setLastName("");
       setEmail("");
-      setComment("");
+      setPhone("");
 
       setTimeout(() => setIsSubmitted(false), 5000);
     } catch (err) {
@@ -60,15 +68,15 @@ export default function ContactForm() {
 
   return (
     <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
-      <h2 className="text-center mb-8 text-2xl font-bold text-gray-900">
-        Send Us a Message
+      <h2 className=" text-center mb-8 text-2xl font-bold text-gray-900">
+        Start Processing Today
       </h2>
 
       {isSubmitted ? (
         <div className="text-center py-8">
-          <div className="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg
-              className="w-8 h-8 text-brand-blue"
+              className="w-8 h-8 text-brand-red"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -80,10 +88,10 @@ export default function ContactForm() {
             </svg>
           </div>
           <h3 className="text-xl font-semibold text-gray-900 mb-2">
-            Message Sent!
+            Thank you!
           </h3>
           <p className="text-gray-600">
-            Thank you for reaching out. We'll get back to you within 24 hours.
+            We'll be in touch within 24 hours to get you started.
           </p>
         </div>
       ) : (
@@ -96,19 +104,92 @@ export default function ContactForm() {
 
           <div>
             <label
-              htmlFor="name"
+              htmlFor="legalName"
               className="block text-sm font-medium text-gray-700 mb-2"
             >
-              Full Name *
+              Company Legal Name *
             </label>
             <input
               type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              id="legalName"
+              value={legalName}
+              onChange={(e) => setLegalName(e.target.value)}
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
-              placeholder="John Doe"
+              placeholder="Your Company Inc."
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="dbaName"
+              className="block text-sm font-medium text-gray-700 mb-2"
+            >
+              DBA Name (if different)
+            </label>
+            <input
+              type="text"
+              id="dbaName"
+              value={dbaName}
+              onChange={(e) => setDbaName(e.target.value)}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
+              placeholder="Doing Business As Name"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label
+                htmlFor="firstName"
+                className="block text-sm font-medium text-gray-700 mb-2"
+              >
+                First Name *
+              </label>
+              <input
+                type="text"
+                id="firstName"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
+                placeholder="John"
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="lastName"
+                className="block text-sm font-medium text-gray-700 mb-2"
+              >
+                Last Name *
+              </label>
+              <input
+                type="text"
+                id="lastName"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Business Email *
+            </label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
+              placeholder="you@company.com"
             />
           </div>
 
@@ -130,53 +211,13 @@ export default function ContactForm() {
             />
           </div>
 
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700 mb-2"
-            >
-              Email Address *
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
-              placeholder="you@example.com"
-            />
-          </div>
-
-          <div>
-            <label
-              htmlFor="comment"
-              className="block text-sm font-medium text-gray-700 mb-2"
-            >
-              What can we help you with? *
-            </label>
-            <textarea
-              id="comment"
-              value={comment}
-              onChange={(e) => setComment(e.target.value)}
-              required
-              rows={4}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors resize-vertical"
-              placeholder="Tell us about your payment processing needs, business type, or any questions you have..."
-            />
-          </div>
-
           <button
             type="submit"
             disabled={isSubmitting}
             className="w-full bg-gradient-to-r from-brand-blue to-brand-blue text-white py-3 px-6 rounded-lg font-semibold hover:from-brand-blue/90 hover:to-brand-blue/90 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
           >
-            {isSubmitting ? "Sending..." : "Send Message"}
+            {isSubmitting ? "Submitting..." : "Get Started Free"}
           </button>
-
-          <p className="text-xs text-gray-500 text-center">
-            By submitting this form, you agree to our privacy policy and terms of service.
-          </p>
         </form>
       )}
     </div>
