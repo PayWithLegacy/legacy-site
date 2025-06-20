@@ -207,7 +207,7 @@ export default function LeadForm() {
               onChange={(e) => setPhone(e.target.value)}
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
-              placeholder="(555) 123-4567"
+              placeholder="(904) 686-6960"
             />
           </div>
 

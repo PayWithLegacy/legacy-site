@@ -56,7 +56,7 @@ export default function Contact() {
                   <p className="text-gray-600">
                     Call us for immediate assistance
                   </p>
-                  <p className="text-brand-blue font-medium">(555) 123-4567</p>
+                  <p className="text-brand-blue font-medium">(904) 686-6960</p>
                 </div>
               </div>
 

@@ -126,7 +126,7 @@ export default function ContactForm() {
               onChange={(e) => setPhone(e.target.value)}
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
-              placeholder="(555) 123-4567"
+              placeholder="(904) 686-6960"
             />
           </div>
 
@@ -175,7 +175,8 @@ export default function ContactForm() {
           </button>
 
           <p className="text-xs text-gray-500 text-center">
-            By submitting this form, you agree to our privacy policy and terms of service.
+            By submitting this form, you agree to our privacy policy and terms
+            of service.
           </p>
         </form>
       )}
