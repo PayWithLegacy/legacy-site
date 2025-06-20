@@ -31,7 +31,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-brand-red transition-colors"
               >
                 <span className="sr-only">Twitter</span>
                 <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
@@ -83,7 +83,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-brand-red transition-colors"
                 >
                   Contact
                 </Link>

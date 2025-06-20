@@ -145,9 +145,9 @@ export default function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl border border-gray-100 hover:border-[#172D55]/20 hover:shadow-lg transition-all duration-300"
+              className="group p-8 rounded-2xl border border-gray-100 hover:border-brand-blue/20 hover:shadow-lg transition-all duration-300"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-[#172D55]/10 to-[#D2B253]/10 rounded-xl flex items-center justify-center text-[#172D55] group-hover:from-[#172D55]/20 group-hover:to-[#D2B253]/20 transition-colors duration-300 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue/10 to-[#D2B253]/10 rounded-xl flex items-center justify-center text-brand-blue group-hover:from-brand-blue/20 group-hover:to-[#D2B253]/20 transition-colors duration-300 mb-6">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -162,7 +162,7 @@ export default function Features() {
 
         {/* CTA Section */}
         <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-[#172D55]/5 to-[#D2B253]/5 rounded-3xl p-12">
+          <div className="bg-gradient-to-r from-brand-blue/5 via-brand-red/3 to-[#D2B253]/5 rounded-3xl p-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Ready to get started?
             </h3>
@@ -171,7 +171,7 @@ export default function Features() {
               payment processing needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-[#172D55] to-[#172D55] text-white px-8 py-4 rounded-lg font-semibold hover:from-[#172D55]/90 hover:to-[#172D55]/90 transition-all duration-200 transform hover:scale-105">
+              <button className="bg-gradient-to-r from-brand-blue to-brand-blue text-white px-8 py-4 rounded-lg font-semibold hover:from-brand-blue/90 hover:to-brand-blue/90 transition-all duration-200 transform hover:scale-105">
                 Start Free Trial
               </button>
               <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 hover:border-gray-400 transition-colors">

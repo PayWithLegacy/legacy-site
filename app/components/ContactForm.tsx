@@ -68,18 +68,15 @@ export default function ContactForm() {
 
   return (
     <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
-      <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-gray-900">
-          Start Processing Today
-        </h2>
-        <p className="text-gray-600 mt-2">Get your account set up in minutes</p>
-      </div>
+      <h2 className=" text-center mb-8 text-2xl font-bold text-gray-900">
+        Start Processing Today
+      </h2>
 
       {isSubmitted ? (
         <div className="text-center py-8">
-          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg
-              className="w-8 h-8 text-green-600"
+              className="w-8 h-8 text-brand-red"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -118,7 +115,7 @@ export default function ContactForm() {
               value={legalName}
               onChange={(e) => setLegalName(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
               placeholder="Your Company Inc."
             />
           </div>
@@ -135,7 +132,7 @@ export default function ContactForm() {
               id="dbaName"
               value={dbaName}
               onChange={(e) => setDbaName(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
               placeholder="Doing Business As Name"
             />
           </div>
@@ -154,7 +151,7 @@ export default function ContactForm() {
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
                 placeholder="John"
               />
             </div>
@@ -172,7 +169,7 @@ export default function ContactForm() {
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
                 placeholder="Doe"
               />
             </div>
@@ -191,7 +188,7 @@ export default function ContactForm() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
               placeholder="you@company.com"
             />
           </div>
@@ -209,7 +206,7 @@ export default function ContactForm() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#172D55] focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
               placeholder="(555) 123-4567"
             />
           </div>
@@ -217,7 +214,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-[#172D55] to-[#172D55] text-white py-3 px-6 rounded-lg font-semibold hover:from-[#172D55]/90 hover:to-[#172D55]/90 focus:outline-none focus:ring-2 focus:ring-[#172D55] focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+            className="w-full bg-gradient-to-r from-brand-blue to-brand-blue text-white py-3 px-6 rounded-lg font-semibold hover:from-brand-blue/90 hover:to-brand-blue/90 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
           >
             {isSubmitting ? "Submitting..." : "Get Started Free"}
           </button>

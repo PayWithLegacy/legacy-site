@@ -1,16 +1,14 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,msx}",
+    "./components/**/*.{js,ts,jsx,tsx,msx}",
+    "./app/**/*.{js,ts,jsx,tsx,msx}",
   ],
   theme: {
-    colors: {
-      "brand-blue": "#172D55",
-      "brand-red": "#172D55",
-      "brand-gold": "#D2B253",
-    },
     extend: {
+      colors: {
+        "brand-red": "#c72127",
+      },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
         mono: ["var(--font-geist-mono)", "monospace"],
@@ -42,5 +40,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 };

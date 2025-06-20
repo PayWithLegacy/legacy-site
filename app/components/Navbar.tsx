@@ -26,25 +26,25 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="/services"
-              className="text-gray-600 hover:text-[#172D55] px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              className="text-gray-600 hover:text-brand-red px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Services
             </Link>
             <Link
               href="/about"
-              className="text-gray-600 hover:text-[#172D55] px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              className="text-gray-600 hover:text-brand-red px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-gray-600 hover:text-[#172D55] px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              className="text-gray-600 hover:text-brand-red px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Contact
             </Link>
             <Link
               href="/get-started"
-              className="bg-[#172D55] hover:bg-[#172D55]/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors ml-4"
+              className="bg-brand-blue hover:bg-brand-blue/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors ml-4"
             >
               Get Started
             </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={toggleMenu}
-              className="bg-gray-50 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#172D55]"
+              className="bg-gray-50 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-blue"
               aria-controls="mobile-menu"
               aria-expanded={isMenuOpen}
             >
@@ -86,28 +86,28 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
             <Link
               href="/services"
-              className="text-gray-600 hover:text-[#172D55] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-brand-blue block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link
               href="/about"
-              className="text-gray-600 hover:text-[#172D55] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-brand-blue block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-gray-600 hover:text-[#172D55] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-brand-blue block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </Link>
             <Link
               href="/get-started"
-              className="bg-[#172D55] hover:bg-[#172D55]/90 text-white block px-3 py-2 rounded-md text-base font-medium mt-4"
+              className="bg-brand-blue hover:bg-brand-blue/90 text-white block px-3 py-2 rounded-md text-base font-medium mt-4"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Started
