@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import HorizontalLogo from "./Logos/HorizontalLogo";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,18 +10,15 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-200">
+    <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50 py-1">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">LP</span>
+            <Link href="/" className="flex items-center">
+              <div className="h-12">
+                <HorizontalLogo fillColor="black" />
               </div>
-              <span className="text-xl font-semibold text-gray-900">
-                Legacy Payments
-              </span>
             </Link>
           </div>
 

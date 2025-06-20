@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HorizontalLogo from "./Logos/HorizontalLogo";
 
 export default function Footer() {
   return (
@@ -7,11 +8,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">LP</span>
+            <div className="flex items-center mb-4">
+              <div className="h-10">
+                <HorizontalLogo fillColor="white" />
               </div>
-              <span className="text-xl font-semibold">Legacy Payments</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Legacy Payments is a modern payment processing platform that enables businesses to securely accept payments, manage transactions, and streamline their financial operations.
