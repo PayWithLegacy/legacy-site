@@ -5,6 +5,17 @@ import { postSlackMessage } from "@/utils/slack";
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
   const body: LeadBody = await request.json();
+
+  // Validate required fields
+  if (
+    !body.legal_name ||
+    !body.first_name ||
+    !body.last_name ||
+    !body.email ||
+    !body.phone
+  ) {
+    return NextResponse.json("Bad Request", { status: 400 });
+  }
   try {
     const response = await postToDealTracker(body);
     if (response?.Response === "Api Authorization Failed.") {
