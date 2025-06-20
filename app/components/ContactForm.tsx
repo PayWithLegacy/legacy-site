@@ -115,7 +115,7 @@ export default function ContactForm() {
               value={legalName}
               onChange={(e) => setLegalName(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
               placeholder="Your Company Inc."
             />
           </div>
@@ -132,7 +132,7 @@ export default function ContactForm() {
               id="dbaName"
               value={dbaName}
               onChange={(e) => setDbaName(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
               placeholder="Doing Business As Name"
             />
           </div>
@@ -151,7 +151,7 @@ export default function ContactForm() {
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
                 placeholder="John"
               />
             </div>
@@ -169,7 +169,7 @@ export default function ContactForm() {
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
                 placeholder="Doe"
               />
             </div>
@@ -188,7 +188,7 @@ export default function ContactForm() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
               placeholder="you@company.com"
             />
           </div>
@@ -206,7 +206,7 @@ export default function ContactForm() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-blue focus:border-transparent focus:outline-none transition-colors"
               placeholder="(555) 123-4567"
             />
           </div>
