@@ -5,6 +5,7 @@ export type LeadBody = {
   last_name: string;
   email: string;
   phone: string;
+  ip?: string;
 };
 
 export type DealTrackerLead = {

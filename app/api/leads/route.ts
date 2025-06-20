@@ -2,6 +2,7 @@ import type { LeadBody, DealTrackerLead } from "./types";
 import { NextRequest, NextResponse } from "next/server";
 import { DEAL_TRACKER_API_KEY } from "@/utils/env";
 import { postSlackMessage } from "@/utils/slack";
+import { ipAddress } from "@vercel/functions";
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
   const body: LeadBody = await request.json();
@@ -16,6 +17,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   ) {
     return NextResponse.json("Bad Request", { status: 400 });
   }
+  body.ip = ipAddress(request) || "localhost";
+
   try {
     const response = await postToDealTracker(body);
     if (response?.Response === "Api Authorization Failed.") {
@@ -58,6 +61,7 @@ async function postToDealTracker(leadBody: LeadBody): Promise<any> {
         last_name: leadBody.last_name,
         email: leadBody.email,
         phone1: leadBody.phone,
+        ip_address: leadBody.ip,
       } as DealTrackerLead),
     }
   );
