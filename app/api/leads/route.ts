@@ -22,8 +22,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       throw new Error("API authorization to DealTracker failed");
     }
     await postSlackMessage(
-      `New lead posted to Deal Tracker:\n` +
-        `*Lead Details*:\n` +
+      `*Lead Details*:\n` +
         Object.entries(body)
           .map(([key, value]) => `${key}: ${value}`)
           .join("\n"),
