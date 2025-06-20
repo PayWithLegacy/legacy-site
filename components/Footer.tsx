@@ -18,8 +18,7 @@ export default function Footer() {
               enables businesses to securely accept payments, manage
               transactions, and streamline their financial operations.
             </p>
-            <div className="flex space-x-4">
-              {/* Social Media Icons - Placeholder */}
+            {/* <div className="flex space-x-4">
               <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -47,7 +46,7 @@ export default function Footer() {
                   <span className="text-xs">in</span>
                 </div>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}

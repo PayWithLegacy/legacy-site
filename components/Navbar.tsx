@@ -43,7 +43,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              href="/get-started"
+              href="/#lead-form"
               className="bg-brand-blue hover:bg-brand-blue/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors ml-4"
             >
               Get Started
@@ -106,7 +106,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              href="/get-started"
+              href="/#lead-form"
               className="bg-brand-blue hover:bg-brand-blue/90 text-white block px-3 py-2 rounded-md text-base font-medium mt-4"
               onClick={() => setIsMenuOpen(false)}
             >

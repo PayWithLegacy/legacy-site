@@ -90,7 +90,7 @@ export default function LeadForm() {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
+    <div id="lead-form" className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
       <h2 className=" text-center mb-8 text-2xl font-bold text-gray-900">
         Start Processing Today
       </h2>

@@ -1,4 +1,9 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 export default function Features() {
+  const router = useRouter();
   const features = [
     {
       icon: (
@@ -171,10 +176,21 @@ export default function Features() {
               payment processing needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-brand-blue to-brand-blue text-white px-8 py-4 rounded-lg font-semibold hover:from-brand-blue/90 hover:to-brand-blue/90 transition-all duration-200 transform hover:scale-105">
+              <button
+                onClick={() => {
+                  const element = document.getElementById("lead-form");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="bg-gradient-to-r from-brand-blue to-brand-blue text-white px-8 py-4 rounded-lg font-semibold hover:from-brand-blue/90 hover:to-brand-blue/90 transition-all duration-200 transform hover:scale-105"
+              >
                 Sign Up Today
               </button>
-              <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 hover:border-gray-400 transition-colors">
+              <button
+                onClick={() => router.push("/about")}
+                className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 hover:border-gray-400 transition-colors"
+              >
                 Learn More
               </button>
             </div>
