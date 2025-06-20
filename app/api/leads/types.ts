@@ -8,7 +8,7 @@ export type LeadBody = {
 };
 
 export type DealTrackerLead = {
-  apiKey: string;
+  apikey: string;
   business_corporate_name: string;
   business_dba_name: string;
   first_name: string;

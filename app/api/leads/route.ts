@@ -41,7 +41,7 @@ async function postToDealTracker(leadBody: LeadBody): Promise<any> {
         apiKey: DEAL_TRACKER_API_KEY,
       },
       body: JSON.stringify({
-        apiKey: DEAL_TRACKER_API_KEY,
+        apikey: DEAL_TRACKER_API_KEY,
         business_corporate_name: leadBody.legal_name,
         business_dba_name: leadBody.dba_name,
         first_name: leadBody.first_name,

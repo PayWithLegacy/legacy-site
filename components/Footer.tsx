@@ -1,5 +1,5 @@
+import HorizontalLogo from "@/components/Logos/HorizontalLogoFill";
 import Link from "next/link";
-import HorizontalLogo from "./Logos/HorizontalLogoFill";
 
 export default function Footer() {
   return (

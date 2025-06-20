@@ -1,8 +1,8 @@
 "use client";
 
+import BulletPoint from "@/components/BulletPoint";
+import LeadForm from "@/components/LeadForm";
 import { motion } from "framer-motion";
-import ContactForm from "./LeadForm";
-import BulletPoint from "./BulletPoint";
 
 export default function Hero() {
   const containerVariants = {
@@ -52,7 +52,6 @@ export default function Hero() {
   return (
     <div className="relative bg-gradient-to-br from-brand-blue via-brand-blue/95 to-brand-blue/85 overflow-hidden">
       {/* Animated background elements */}
-      
 
       <motion.div
         className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32"
@@ -149,7 +148,7 @@ export default function Hero() {
               transition: { duration: 0.3 },
             }}
           >
-            <ContactForm />
+            <LeadForm />
           </motion.div>
         </div>
       </motion.div>

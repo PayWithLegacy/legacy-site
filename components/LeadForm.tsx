@@ -11,7 +11,7 @@ type LeadBody = {
   phone: string;
 };
 
-export default function ContactForm() {
+export default function LeadForm() {
   const [legalName, setLegalName] = useState("");
   const [dbaName, setDbaName] = useState("");
   const [firstName, setFirstName] = useState("");

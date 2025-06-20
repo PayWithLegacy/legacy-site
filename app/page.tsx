@@ -1,5 +1,5 @@
-import Hero from "./components/Hero";
-import Features from "./components/Features";
+import Features from "@/components/Features";
+import Hero from "@/components/Hero";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

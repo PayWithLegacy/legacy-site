@@ -1,5 +1,5 @@
 "use client";
-import Logo from "../components/Logos/HorizintalLogo";
+import Logo from "@/components/Logos/HorizintalLogo";
 import { useState } from "react";
 import Link from "next/link";
 

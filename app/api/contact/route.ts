@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { postSlackMessage } from "../../../utils/slack";
+import { postSlackMessage } from "@/utils/slack";
 
 export interface ContactBody {
   name: string;
