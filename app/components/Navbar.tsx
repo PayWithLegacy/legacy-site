@@ -24,12 +24,12 @@ export default function Navbar() {
 
           {/* Navigation Links and CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link
+            {/* <Link
               href="/services"
               className="text-gray-600 hover:text-brand-red px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Services
-            </Link>
+            </Link> */}
             <Link
               href="/about"
               className="text-gray-600 hover:text-brand-red px-3 py-2 rounded-md text-sm font-medium transition-colors"
@@ -84,13 +84,13 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
-            <Link
+            {/* <Link
               href="/services"
               className="text-gray-600 hover:text-brand-blue block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
-            </Link>
+            </Link> */}
             <Link
               href="/about"
               className="text-gray-600 hover:text-brand-blue block px-3 py-2 rounded-md text-base font-medium"

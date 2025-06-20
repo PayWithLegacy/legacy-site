@@ -172,10 +172,10 @@ export default function Features() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-gradient-to-r from-brand-blue to-brand-blue text-white px-8 py-4 rounded-lg font-semibold hover:from-brand-blue/90 hover:to-brand-blue/90 transition-all duration-200 transform hover:scale-105">
-                Start Free Trial
+                Sign Up Today
               </button>
               <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 hover:border-gray-400 transition-colors">
-                Schedule Demo
+                Learn More
               </button>
             </div>
           </div>

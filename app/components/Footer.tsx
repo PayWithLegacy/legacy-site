@@ -64,14 +64,14 @@ export default function Footer() {
                   Home
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/services"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Services
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/about"
@@ -97,22 +97,22 @@ export default function Footer() {
               Support
             </h3>
             <ul className="space-y-2">
-              <li>
+              {/* <li>
                 <Link
                   href="/help"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Help Center
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   href="/documentation"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Documentation
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/privacy"
@@ -139,7 +139,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               © 2025 Legacy Payments. All rights reserved.
             </p>
-            <div className="mt-4 md:mt-0 flex space-x-6">
+            {/* <div className="mt-4 md:mt-0 flex space-x-6">
               <Link
                 href="/privacy"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
@@ -158,7 +158,7 @@ export default function Footer() {
               >
                 Cookies
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
