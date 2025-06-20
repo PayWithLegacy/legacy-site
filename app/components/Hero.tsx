@@ -1,46 +1,167 @@
 "use client";
 
+import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
 import BulletPoint from "./BulletPoint";
 
 export default function Hero() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
+  const gradientVariants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <div className="relative bg-gradient-to-br from-brand-blue via-brand-blue/95 to-brand-blue/85 overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      {/* Animated background elements */}
+      <motion.div
+        className="absolute inset-0 opacity-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.1 }}
+        transition={{ duration: 2, delay: 0.5 }}
+      >
+        <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-white rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-white rounded-full blur-2xl" />
+      </motion.div>
+
+      <motion.div
+        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32"
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Content */}
-          <div className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+          <motion.div
+            className="text-center lg:text-left"
+            variants={itemVariants}
+          >
+            <motion.h1
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
+              variants={titleVariants}
+            >
               Payments Made{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white">
+              <motion.span
+                className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white"
+                variants={gradientVariants}
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 Simple
-              </span>
-            </h1>
-            <p className="mt-6 text-xl text-white/90 leading-relaxed">
+              </motion.span>
+            </motion.h1>
+
+            <motion.p
+              className="mt-6 text-xl text-white/90 leading-relaxed"
+              variants={itemVariants}
+              whileHover={{
+                color: "rgba(255, 255, 255, 1)",
+                transition: { duration: 0.3 },
+              }}
+            >
               Transform your business with our secure, fast, and reliable
               payment processing platform. We specialize in merchant boarding
               with streamlined underwriting processes, helping businesses get
               approved for both high-risk and low-risk payment processing
               solutions.
-            </p>
+            </motion.p>
 
             {/* Bullet points */}
-            <div className="hidden lg:block mx-auto max-w-lg lg:max-w-none">
+            <motion.div
+              className="hidden lg:block mx-auto max-w-lg lg:max-w-none"
+              variants={itemVariants}
+            >
               <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-3 justify-items-start">
-                <BulletPoint text="24/7 Customer Support" />
-                <BulletPoint text="Fast Approvals" />
-                <BulletPoint text="High-Risk & Low-Risk Solutions" />
-                <BulletPoint text="Streamlined Underwriting" />
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.8, duration: 0.5 }}
+                  whileHover={{ x: 5, transition: { duration: 0.2 } }}
+                >
+                  <BulletPoint text="24/7 Customer Support" />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.9, duration: 0.5 }}
+                  whileHover={{ x: 5, transition: { duration: 0.2 } }}
+                >
+                  <BulletPoint text="Fast Approvals" />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 1.0, duration: 0.5 }}
+                  whileHover={{ x: 5, transition: { duration: 0.2 } }}
+                >
+                  <BulletPoint text="High-Risk & Low-Risk Solutions" />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 1.1, duration: 0.5 }}
+                  whileHover={{ x: 5, transition: { duration: 0.2 } }}
+                >
+                  <BulletPoint text="Streamlined Underwriting" />
+                </motion.div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Right side - Form */}
-          <div className="relative">
+          <motion.div
+            className="relative"
+            variants={itemVariants}
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.3 },
+            }}
+          >
             <ContactForm />
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
