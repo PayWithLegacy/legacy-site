@@ -1,43 +1,25 @@
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Legacy Payments",
-  description:
-    "Legacy Payments is a modern payment processing solution that enables businesses to securely accept payments, manage transactions, and streamline their financial operations with advanced features and robust security measures.",
-  keywords: [
-    "payment processing",
-    "payment gateway",
-    "merchant services",
-    "online payments",
-    "secure payments",
-    "business payments",
-  ],
-  openGraph: {
-    title: "Legacy Payments - Modern Payment Processing Solution",
-    description:
-      "Legacy Payments is a modern payment processing solution that enables businesses to securely accept payments, manage transactions, and streamline their financial operations.",
-    type: "website",
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Legacy Payments - Modern Payment Processing Solution",
-    description:
-      "Legacy Payments is a modern payment processing solution that enables businesses to securely accept payments, manage transactions, and streamline their financial operations.",
-  },
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  // },
-};
+import { Header } from "@/components/sections/Header";
+import { Services } from "@/components/sections/Services";
+import { About } from "@/components/sections/About";
+import { Statistics } from "@/components/sections/Statistics";
+import { Industries } from "@/components/sections/Industries";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { FrequentlyAdd } from "@/components/sections/Contact";
+import { Footer } from "@/components/sections/Footer";
+import { Hero } from "@/components/sections/Hero";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
+    <>
+      <Header />
       <Hero />
-      <Features />
-    </div>
+      <Services />
+      <About />
+      <Statistics />
+      <Industries />
+      <Testimonials />
+      <FrequentlyAdd />
+      <Footer />
+    </>
   );
 }
