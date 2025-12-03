@@ -10,7 +10,7 @@ export function Services() {
       icon: ShieldCheck,
       title: "Fast, Flexible Merchant Accounts",
       description:
-        "We specialize in placing hard-to-approve merchants. Whether you're in CBD, adult, supplements, or travel — we’ll get you processing fast with custom-fit solutions and no games.",
+        "We specialize in placing hard-to-approve merchants. Whether you're in CBD, adult, supplements, or travel — we&apos;ll get you processing fast with custom-fit solutions and no games.",
     },
     {
       icon: Headphones,
@@ -66,15 +66,22 @@ export function Services() {
               className="mt-8 bg-[#DA2626] text-[17px] text-[#fff] font-semibold px-8 py-8 rounded-full flex gap-5 justify-center items-center"
               size="lg"
             >
-              <a href="#signupform" className="flex justify-center items-center gap-2">
-              Get Approved Now <span><Image
-                                          src="/rightarrow.svg" // Replace with actual logo path
-                                          alt="Legacy Payments Logo"
-                                          width={50}
-                                          height={50}
-                                          className="object-contain"
-                                        /></span>
-                                        </a>           </Button>
+              <a
+                href="#signupform"
+                className="flex justify-center items-center gap-2"
+              >
+                Get Approved Now{" "}
+                <span>
+                  <Image
+                    src="/rightarrow.svg" // Replace with actual logo path
+                    alt="Legacy Payments Logo"
+                    width={50}
+                    height={50}
+                    className="object-contain"
+                  />
+                </span>
+              </a>{" "}
+            </Button>
           </div>
         </div>
 

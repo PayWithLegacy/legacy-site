@@ -16,9 +16,9 @@ export function Industries() {
           4 Reliable Steps To Secure A Stable High-Risk Merchant Account
         </h2>
         <p className="text-[#696969E5]  mb-10 font-semibold">
-          Rest assured, even if you’ve been turned down by every financial
+          Rest assured, even if you&apos;ve been turned down by every financial
           institution, placed on the MATCH LIST, or faced rejection from other
-          payment processors across the board, we’re here to support you!
+          payment processors across the board, we&apos;re here to support you!
         </p>
 
         {/* Flex Container */}
@@ -42,15 +42,21 @@ export function Industries() {
               </p>
             </div>
             <button className="bg-gradient-to-r from-[#D2B253] to-[#D2B253B2] text-white px-6 py-5 justify-center text-[24px] text-center rounded-full text-[24px] font-semibold hover:bg-yellow-500 w-fit flex items-center justify-between gap-2 w-full">
-              <a href="#signupform" className="flex items-center justify-between w-full">
-              GET LIGHTNING FAST APPROVAL<span><Image
-                                                        src="/rightarrow.svg" // Replace with actual logo path
-                                                        alt="Legacy Payments Logo"
-                                                        width={50}
-                                                        height={50}
-                                                        className="object-contain"
-                                                      /></span>
-                                                      </a>
+              <a
+                href="#signupform"
+                className="flex items-center justify-between w-full"
+              >
+                GET LIGHTNING FAST APPROVAL
+                <span>
+                  <Image
+                    src="/rightarrow.svg" // Replace with actual logo path
+                    alt="Legacy Payments Logo"
+                    width={50}
+                    height={50}
+                    className="object-contain"
+                  />
+                </span>
+              </a>
             </button>
           </div>
 
@@ -58,7 +64,9 @@ export function Industries() {
           <div className="grid grid-cols-2 gap-6">
             {/* Step 1 */}
             <div className="col-span-2 bg-[#DA26260F] p-6 rounded-lg border border-[#FFDADA]">
-              <h3 className="text-[#E35C5C] font-bold text-[71px] opacity-10">01</h3>
+              <h3 className="text-[#E35C5C] font-bold text-[71px] opacity-10">
+                01
+              </h3>
               <h4 className="font-semibold mb-1 text-[#182E56] text-[24px]">
                 Submit Your Application (2–5 Minutes)
               </h4>
@@ -71,7 +79,9 @@ export function Industries() {
 
             {/* Step 2 */}
             <div className="shadow p-3 rounded-sm">
-              <h3 className="text-[#E35C5C] font-bold text-[71px] opacity-10">02</h3>
+              <h3 className="text-[#E35C5C] font-bold text-[71px] opacity-10">
+                02
+              </h3>
               <h4 className="font-semibold mb-1 text-[#182E56] text-[24px]">
                 24 Hour Underwriting Review
               </h4>
@@ -84,7 +94,9 @@ export function Industries() {
 
             {/* Step 3 */}
             <div className="shadow p-3 rounded-sm">
-              <h3 className="text-[#E35C5C] font-bold text-[71px] opacity-10">03</h3>
+              <h3 className="text-[#E35C5C] font-bold text-[71px] opacity-10">
+                03
+              </h3>
               <h4 className="font-semibold mb-1 text-[#182E56] text-[24px]">
                 Account Setup & Integration
               </h4>
@@ -97,7 +109,9 @@ export function Industries() {
 
             {/* Step 4 */}
             <div className="col-span-2 shadow p-3 rounded-sm ">
-              <h3 className="text-[#E35C5C] font-bold text-[71px] opacity-10">04</h3>
+              <h3 className="text-[#E35C5C] font-bold text-[71px] opacity-10">
+                04
+              </h3>
               <h4 className="font-semibold mb-1 text-[#182E56] text-[24px]">
                 Start Processing Payments
               </h4>

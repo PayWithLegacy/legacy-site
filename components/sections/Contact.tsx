@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question:
-      "How Fast Can I Get Approved If I’ve Been Declined By Other Processors?",
+      "How Fast Can I Get Approved If I&apos;ve Been Declined By Other Processors?",
     answer:
       "We approve 89% of previously declined merchants within 24–48 hours.",
   },
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "What Support Can I Expect As A High-Risk Merchant",
     answer:
-      "You’ll receive 24/7 dedicated support, chargeback management tools, and guidance to maintain compliance, ensuring your business operates smoothly and securely.",
+      "You&apos;ll receive 24/7 dedicated support, chargeback management tools, and guidance to maintain compliance, ensuring your business operates smoothly and securely.",
   },
 ];
 
@@ -70,9 +70,9 @@ export function FrequentlyAdd() {
                 </div>
                 <div>
                   <p className="font-bold text-[20px]">Call Us Now!</p>
-            <p className="text-lg">
-  <a href="tel:1-904-686-6960">1-904-686-6960</a>
-</p>
+                  <p className="text-lg">
+                    <a href="tel:1-904-686-6960">1-904-686-6960</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -88,12 +88,16 @@ export function FrequentlyAdd() {
                 </div>
                 <div>
                   <p className="font-bold  text-[20px]">Whatsapp</p>
-                  <p className="text-lg"><a href="https://wa.me/19046866960" target="_blank">1 904 686 6960</a></p>
+                  <p className="text-lg">
+                    <a href="https://wa.me/19046866960" target="_blank">
+                      1 904 686 6960
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
             <div className="bg-blue-900 text-white p-4 rounded-lg ">
-               <div className="flex gap-10 items-center">
+              <div className="flex gap-10 items-center">
                 <div className="contact-icon">
                   <Image
                     src="live-chat.svg" // replace with actual path
@@ -103,12 +107,19 @@ export function FrequentlyAdd() {
                   />
                 </div>
                 <div>
-              <p className="font-bold  text-[20px]">Email Us</p>
-              <p className="text-lg"><a href="mailto:Support@Paywithlegacy.com" className="text-[#fff]">Support@Paywithlegacy.com</a> </p>
+                  <p className="font-bold  text-[20px]">Email Us</p>
+                  <p className="text-lg">
+                    <a
+                      href="mailto:Support@Paywithlegacy.com"
+                      className="text-[#fff]"
+                    >
+                      Support@Paywithlegacy.com
+                    </a>{" "}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
 
         {/* Right Side */}

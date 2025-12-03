@@ -14,7 +14,7 @@ export function Testimonials() {
     {
       name: "Mike Rodriguez",
       role: "Founder, Elite Gaming Platform",
-      text: "Hands down the best high-risk processor in the industry. Competitive rates, lightning-fast approvals, and they actually understand our complex business model. Couldn’t recommend them more highly!",
+      text: "Hands down the best high-risk processor in the industry. Competitive rates, lightning-fast approvals, and they actually understand our complex business model. Couldn&apos;t recommend them more highly!",
       image: "/test1.png",
     },
     {
@@ -55,7 +55,9 @@ export function Testimonials() {
                   className="rounded-full object-cover"
                 />
                 <div>
-                  <h4 className="font-bold text-sm text-[#182E56CC]">{t.name}</h4>
+                  <h4 className="font-bold text-sm text-[#182E56CC]">
+                    {t.name}
+                  </h4>
                   <p className="text-[13px] text-[#D4AF37] font-medium">
                     {t.role}
                   </p>
