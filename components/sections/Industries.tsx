@@ -19,6 +19,8 @@ export function Industries() {
           Rest assured, even if you&apos;ve been turned down by every financial
           institution, placed on the MATCH LIST, or faced rejection from other
           payment processors across the board, we&apos;re here to support you!
+          <br /><br />
+          <span className="text-[#DA2626] font-bold">We accept:</span> Adult Entertainment, CBD & Hemp, Credit Repair, Crypto, Firearms, Forex, Gaming, Nutraceuticals, Travel, and more.
         </p>
 
         {/* Flex Container */}

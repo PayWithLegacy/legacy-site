@@ -15,14 +15,12 @@ export function Hero() {
             Merchant Services
           </span> */}
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4 py-5">
-            Your Business Is <br />
-            Almost <span className="text-[#D4AF37]"> Approved</span>
+            High-Risk Merchant <br />
+            Accounts <span className="text-[#D4AF37]"> Approved</span>
           </h1>
 
           <p className="text-[22px] text-white/90 mb-6 max-w-lg leading-10 banner-sub">
-            We&apos;ll get you processing – guaranteed or no fees. Same day
-            approvals. Our dedicated team provides personalized support,
-            ensuring your processing runs smoothly and efficiently.
+            Specializing in Bad Credit, TMF, and Hard-to-Place Industries. We&apos;ll get you processing – guaranteed or no fees. Same day approvals.
           </p>
 
           <Button className="bg-gradient-to-r from-[#D2B253] to-[#D2B253B2] text-[#fff]  text-sm font-semibold px-10 py-6 rounded-full w-fit">
@@ -65,7 +63,7 @@ export function Hero() {
               width="700"
               height={700}
               className="mobilehero-img"
-              // className="rotate-[15deg] drop-shadow-2xl"
+            // className="rotate-[15deg] drop-shadow-2xl"
             />
           </div>
           <div className="absolute right-3 bottom-[0px]">

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Leading provider of high-risk merchant accounts and payment processing solutions. Same-day approval for gaming, adult entertainment, peptides, crypto, and more.",
   keywords:
-    "high risk merchant accounts, payment processing, peptide payment processing, adult entertainment payment processing, same day merchant account approval, gaming payment processor, crypto payment gateway",
+    "high risk merchant accounts, payment processing, peptide payment processing, adult entertainment payment processing, same day merchant account approval, gaming payment processor, crypto payment gateway, bad credit merchant account, match list acceptance, tmf merchant account, offshore merchant accounts, instant approval high risk",
   authors: [{ name: "PayWithLegacy" }],
   creator: "PayWithLegacy",
   publisher: "PayWithLegacy",

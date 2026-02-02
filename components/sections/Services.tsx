@@ -8,9 +8,9 @@ export function Services() {
   const highlights = [
     {
       icon: ShieldCheck,
-      title: "Fast, Flexible Merchant Accounts",
+      title: "Instant High-Risk Merchant Accounts",
       description:
-        "We specialize in placing hard-to-approve merchants. Whether you're in CBD, adult, supplements, or travel — we&apos;ll get you processing fast with custom-fit solutions and no games.",
+        "We specialize in placing hard-to-approve merchants. Same Day Approval for CBD, adult, supplements, or travel — we&apos;ll get you processing fast with custom-fit solutions.",
     },
     {
       icon: Headphones,
@@ -20,7 +20,7 @@ export function Services() {
     },
     {
       icon: AlertTriangle,
-      title: "Chargeback & Risk Management",
+      title: "Chargeback Protection & Fraud Prevention",
       description:
         "We help you stay compliant and protect your business with proactive tools to reduce fraud and chargebacks — before they become a problem.",
     },
