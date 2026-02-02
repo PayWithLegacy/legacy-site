@@ -78,42 +78,122 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e40af" />
+        {/* Enhanced Schema.org Markup */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "FinancialService",
-              name: "PayWithLegacy",
-              description:
-                "Leading provider of high-risk merchant accounts and payment processing solutions",
-              url: "https://www.paywithlegacy.com",
-              logo: "https://www.paywithlegacy.com/logo.png",
-              sameAs: [
-                "https://twitter.com/paywithlegacy",
-                "https://linkedin.com/company/paywithlegacy",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.paywithlegacy.com/#organization",
+                  name: "PayWithLegacy",
+                  url: "https://www.paywithlegacy.com",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://www.paywithlegacy.com/logo.png",
+                  },
+                  sameAs: [
+                    "https://twitter.com/paywithlegacy",
+                    "https://linkedin.com/company/paywithlegacy",
+                    "https://facebook.com/paywithlegacy",
+                  ],
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    telephone: "+1-904-686-6960",
+                    contactType: "Customer Service",
+                    email: "Support@Paywithlegacy.com",
+                    areaServed: "US",
+                    availableLanguage: ["English"],
+                  },
+                },
+                {
+                  "@type": "FinancialService",
+                  "@id": "https://www.paywithlegacy.com/#service",
+                  name: "PayWithLegacy - High-Risk Merchant Accounts",
+                  description: "Leading provider of high-risk merchant accounts and payment processing solutions. Same-day approval for CBD, adult entertainment, gaming, crypto, and other high-risk industries.",
+                  url: "https://www.paywithlegacy.com",
+                  telephone: "+1-904-686-6960",
+                  email: "Support@Paywithlegacy.com",
+                  priceRange: "$$",
+                  areaServed: {
+                    "@type": "Country",
+                    name: "United States",
+                  },
+                  hasOfferCatalog: {
+                    "@type": "OfferCatalog",
+                    name: "High-Risk Payment Services",
+                    itemListElement: [
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "High-Risk Merchant Accounts",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "CBD Payment Processing",
+                        },
+                      },
+                      {
+                        "@type": "Offer",
+                        itemOffered: {
+                          "@type": "Service",
+                          name: "Chargeback Protection",
+                        },
+                      },
+                    ],
+                  },
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: "4.9",
+                    reviewCount: "127",
+                    bestRating: "5",
+                  },
+                },
+                {
+                  "@type": "FAQPage",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "What is a high-risk merchant account?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "A high-risk merchant account is a payment processing account for businesses in industries with higher chargeback rates or regulatory scrutiny, such as CBD, adult entertainment, gaming, and crypto.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Can I get approved if I'm on the MATCH list?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes! PayWithLegacy specializes in helping merchants on the MATCH list (TMF) get approved for payment processing through our network of understanding banking partners.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "How long does approval take?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Most merchants receive same-day or 24-48 hour approval. Our streamlined application process is designed specifically for high-risk businesses.",
+                      },
+                    },
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.paywithlegacy.com/#website",
+                  url: "https://www.paywithlegacy.com",
+                  name: "PayWithLegacy",
+                  publisher: {
+                    "@id": "https://www.paywithlegacy.com/#organization",
+                  },
+                },
               ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+1-800-SECUREPAY",
-                contactType: "Customer Service",
-                areaServed: "US",
-                availableLanguage: ["English"],
-              },
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "123 Financial District",
-                addressLocality: "New York",
-                addressRegion: "NY",
-                postalCode: "10004",
-                addressCountry: "US",
-              },
-              serviceType: [
-                "High-Risk Merchant Accounts",
-                "Payment Processing",
-                "Crypto Payment Gateway",
-              ],
-              priceRange: "$$",
             }),
           }}
         />
