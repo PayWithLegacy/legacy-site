@@ -19,22 +19,22 @@ export function Footer() {
         <div className="flex justify-center gap-6 flex-wrap text-sm mb-4">
           <div className="flex items-center gap-1">
             <span className="text-[#172D55] text-lg"> <Image
-                            src="blue-check.svg"
-                            alt="App Preview"
-                            width={20}
-                            height={20}
-                            className=""
-                          /></span>
+              src="blue-check.svg"
+              alt="App Preview"
+              width={20}
+              height={20}
+              className=""
+            /></span>
             Transparent Pricing & No Hidden Fees
           </div>
           <div className="flex items-center gap-1">
             <span className="text-[#172D55] text-lg"> <Image
-                            src="blue-check.svg"
-                            alt="App Preview"
-                            width={20}
-                            height={20}
-                            className=""
-                          /></span>
+              src="blue-check.svg"
+              alt="App Preview"
+              width={20}
+              height={20}
+              className=""
+            /></span>
             Dedicated U.S.-Based Support
           </div>
         </div>
@@ -79,10 +79,10 @@ export function Footer() {
           <h4 className="font-bold text-[#F7A600] mb-4 text-[18px]">Other Links</h4>
           <ul className="space-y-3">
             <li>
-              <Link href="https://paywithlegacy.com/privacy">Privacy Policy</Link>
+              <Link href="/privacy">Privacy Policy</Link>
             </li>
             <li>
-              <Link href="https://paywithlegacy.com/terms">Terms And Conditions</Link>
+              <Link href="/terms">Terms And Conditions</Link>
             </li>
             <li>
               <Link href="#">Refund Policy</Link>
