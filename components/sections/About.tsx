@@ -29,7 +29,7 @@ export function About() {
               </button>
             </div>
             <h2 className="text-2xl lg:text-3xl font-semibold text-[#DA2626] mb-4">
-              Why Make Us Different From Others?
+              What Makes Us Different From Others?
             </h2>
             <p className="text-[16px] text-[#696969E5] mb-6 font-semibold leading-9">
               We specialize in high-risk industries, offering secure, fast, and
