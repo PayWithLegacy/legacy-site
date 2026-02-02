@@ -11,35 +11,35 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "SecurePay Solutions - High-Risk Merchant Account Specialists",
+  title: "PayWithLegacy - High-Risk Merchant Account Specialists",
   description:
     "Leading provider of high-risk merchant accounts and payment processing solutions. Same-day approval for gaming, adult entertainment, peptides, crypto, and more.",
   keywords:
     "high risk merchant accounts, payment processing, peptide payment processing, adult entertainment payment processing, same day merchant account approval, gaming payment processor, crypto payment gateway",
-  authors: [{ name: "SecurePay Solutions" }],
-  creator: "SecurePay Solutions",
-  publisher: "SecurePay Solutions",
+  authors: [{ name: "PayWithLegacy" }],
+  creator: "PayWithLegacy",
+  publisher: "PayWithLegacy",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://securepay-solutions.vercel.app"),
+  metadataBase: new URL("https://www.paywithlegacy.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "SecurePay Solutions - High-Risk Merchant Account Specialists",
+    title: "PayWithLegacy - High-Risk Merchant Account Specialists",
     description:
       "Leading provider of high-risk merchant accounts and payment processing solutions. Same-day approval for gaming, adult entertainment, peptides, crypto, and more.",
-    url: "https://securepay-solutions.vercel.app",
-    siteName: "SecurePay Solutions",
+    url: "https://www.paywithlegacy.com",
+    siteName: "PayWithLegacy",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "SecurePay Solutions - High-Risk Payment Processing",
+        alt: "PayWithLegacy - High-Risk Payment Processing",
       },
     ],
     locale: "en_US",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SecurePay Solutions - High-Risk Merchant Account Specialists",
+    title: "PayWithLegacy - High-Risk Merchant Account Specialists",
     description:
       "Leading provider of high-risk merchant accounts and payment processing solutions. Same-day approval for gaming, adult entertainment, peptides, crypto, and more.",
     images: ["/og-image.jpg"],
@@ -84,14 +84,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FinancialService",
-              name: "SecurePay Solutions",
+              name: "PayWithLegacy",
               description:
                 "Leading provider of high-risk merchant accounts and payment processing solutions",
-              url: "https://securepay-solutions.vercel.app",
-              logo: "https://securepay-solutions.vercel.app/logo.png",
+              url: "https://www.paywithlegacy.com",
+              logo: "https://www.paywithlegacy.com/logo.png",
               sameAs: [
-                "https://twitter.com/securepaysolutions",
-                "https://linkedin.com/company/securepay-solutions",
+                "https://twitter.com/paywithlegacy",
+                "https://linkedin.com/company/paywithlegacy",
               ],
               contactPoint: {
                 "@type": "ContactPoint",

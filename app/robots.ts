@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://securepay-solutions.vercel.app/sitemap.xml',
+    sitemap: 'https://www.paywithlegacy.com/sitemap.xml',
   };
 }
