@@ -60,16 +60,16 @@ export function Footer() {
           <h4 className="font-bold text-[#F7A600] mb-4 text-[18px]">Quick Links</h4>
           <ul className="space-y-3">
             <li>
-              <Link href="#">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="https://paywithlegacy.com/about">About Us</Link>
+              <Link href="/#about">About Us</Link>
             </li>
             <li>
-              <Link href="#">Services</Link>
+              <Link href="/#services">Services</Link>
             </li>
             <li>
-              <Link href="#">FAQs</Link>
+              <Link href="/#industries">Industries</Link>
             </li>
           </ul>
         </div>
@@ -85,10 +85,7 @@ export function Footer() {
               <Link href="/terms">Terms And Conditions</Link>
             </li>
             <li>
-              <Link href="#">Refund Policy</Link>
-            </li>
-            <li>
-              <Link href="#">News</Link>
+              <Link href="/refund-policy">Refund Policy</Link>
             </li>
           </ul>
         </div>

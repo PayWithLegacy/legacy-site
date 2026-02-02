@@ -194,28 +194,81 @@ footer ul li a:hover {
   .banner_checks {
     left: 0 !important;
     top: -22% !important;
-}
-.main-header {
-  border-radius: 10px !important;
-}
-.width-100{
-  width: 100% !important;
-}
-.get-btn {
+  }
+  .main-header {
+    border-radius: 10px !important;
+  }
+  .width-100{
+    width: 100% !important;
+  }
+  .get-btn {
     font-size: 18px !important;
-}
-.padding-hide {
+  }
+  .padding-hide {
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
-.banner-sub{
-  font-size: 18px !important;
-}
-.marginb{
-  margin-bottom: 15px;
-}
-.phone-wrap{
-  flex-wrap: wrap;
-}
-
+  }
+  .banner-sub{
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+  }
+  .marginb{
+    margin-bottom: 15px;
+  }
+  .phone-wrap{
+    flex-wrap: wrap;
+  }
+  
+  /* Hero Section Mobile Fixes */
+  .mobilehero-img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Footer Banner Mobile Fix */
+  footer > div:first-child {
+    width: 95% !important;
+    padding: 1.5rem !important;
+  }
+  
+  /* Form Mobile Improvements */
+  .banner-form form .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .banner-form input {
+    padding: 12px !important;
+  }
+  
+  .banner-form button[type="submit"] {
+    width: 100% !important;
+    padding: 14px !important;
+  }
+  
+  /* CTA Buttons Full Width */
+  .get-btn, 
+  button.bg-gradient-to-r {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  
+  /* Stats Section Mobile */
+  #about .grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-4 {
+    gap: 1.5rem !important;
+  }
+  
+  /* Industries Section Mobile */
+  #industries .grid.lg\\:grid-cols-2 {
+    gap: 1rem !important;
+  }
+  
+  /* Legal Pages Mobile */
+  .container.mx-auto.px-4.py-16.max-w-4xl {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  .container.mx-auto.px-4.py-16.max-w-4xl h1 {
+    font-size: 2rem !important;
+  }
 }
